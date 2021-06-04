@@ -1,0 +1,323 @@
+/* ---------------------Scroll-Bar--------------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    /* max-height: 40%; */
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(100, 100, 100); 
+    height: 10rem;
+    border-radius: 5px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #292929; 
+  }
+
+/* --------------------------------------Body-------------------- */
+body{    
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    background-color: #f1f1f1;
+}
+
+/* -------------------------------Upper Most Colourful Line------------ */
+.rainbow-line{
+    width: 100%; 
+    height: 0.3rem; 
+    background: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);
+}
+
+/* ---------------------Header Navbar----------------------------------*/
+
+.navbar{
+    height: 60px;
+    display: block;
+    z-index: 20;
+    top: 0;
+    position:fixed;
+    transition:top 0.5s;
+    background-color: rgb(241, 137, 137);
+
+}
+
+.logo{
+    margin-left: 3%;
+    width: 8%;
+}
+
+.logo-name{
+    color: black;
+    letter-spacing: 5px;
+    font-size: 1.75rem;
+    margin-left: 3%;
+}
+
+.navigation-content{
+   margin-left: 40%; 
+}
+
+.navigation-content li{
+    padding-right: 2rem;
+}
+
+.menu-item{
+    font-size:large;
+    color: black;
+}
+
+.menu-item:hover{
+    color: orange;
+}  
+  .dropdown-content {
+      color: black;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+/* -----------------------------Carosual---------------------------------*/
+.carousel-heading{
+    font-size: 4rem;
+
+}
+
+.carousel-para{
+    font-size: 2rem;
+}
+
+
+.slider-images{
+    z-index: 10;
+    position: relative;
+}
+
+.carosal-image{
+    filter: opacity(0.7);
+}
+
+.carousel-item{
+    height: 110vh;
+    background-color: black;
+}
+
+/* --------------------------------------Left-Content------------------- */
+.left-contents  { 
+    top: 15%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 70px;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    line-height: 2;
+}
+
+.left-content-ul{
+    padding: 0;
+    list-style: none;
+}
+
+
+/* -----------------------------------Middle----------------------------- */
+.middle{
+    margin-left: 50px;
+}
+
+/* ---------------------Middle Main Box--------------------------------- */
+.main-content{
+    margin-top: 50px;
+    justify-content:space-evenly;
+}
+
+
+/* --------------------------------Middle-Content--------------------- */
+.middle-content{
+    text-align: justify;   
+    padding: 0 20px  50px;
+}
+
+/* ----------------------H1 Headings--------------------------------- */
+.headings{
+    padding-top: 53px;
+}
+
+
+/* ----------------------Content Image--------------------------------- */
+.content-image{
+    padding:5px 0;
+}
+
+
+/* -------------------------------Card-------------------------------- */
+.card {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem ;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }  
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-image-box{
+    margin: 5px;
+    width: 14rem;
+    height: 12rem;
+    overflow: hidden;
+}
+
+.card-img{
+    padding: 5px;
+}
+
+/* ------------------Hyper-Link Underline Design---------------------- */
+.hyperlink{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.hyperlink::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-in-out;
+  } 
+
+.hyperlink:hover:after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* --------------------------------Footer------------------------------ */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    padding: 5rem;
+    /* background-color: #9fedd7; */
+    background-color: rgb(223, 220, 220);
+}
+
+.footer-img{
+    margin-bottom: 5rem;
+    align-self: center;
+    width: 30%;
+}
+
+.footer-about-p{
+    width: 90%;
+}
+
+.quick-link-list li{
+    list-style: none;
+}
+
+/* ---------------------Footer Copyright Section----------------------- */
+.footer-copyright{
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------Copy-Right Section------------------------------ */
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+/* ------------------------------------Social-Media-Icon------------------------ */
+
+.footer-icon{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social-icon{
+    color: orangered;
+    display: block;
+    font-size: 1.75rem;
+    width: 3rem;
+    height: 3.rem;
+    text-align: center;
+    margin: 0 16px;
+    transition: .3s linear;
+    position: relative;
+} 
+
+
+.social-icon::before,.social-icon::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    transition: 0.3s linear;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.social-icon:hover{
+    color: #E1306C;
+    transform: scale(.8);
+}
+
+.social-icon:hover::before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(-20deg);
+    border-radius: 50%;
+    color: #E1306C;
+}
+
+
+.social-icon:hover::after{    
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(20deg);
+    border-radius: 50%;
+    color: #E1306C;
+
+}
+
